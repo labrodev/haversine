@@ -1,0 +1,55 @@
+{
+    "name": "labrodev/haversine",
+    "description": "Utility library that provides a lightweight method to calculate the great-circle distance between two geographic coordinates using the Haversine formula.",
+    "keywords": [
+        "labrodev",
+        "php",
+        "distance-calculator",
+        "latitude-longitude",
+        "haversine",
+        "helper",
+        "utility",
+        "static"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/labrodev/haversine",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Labro Dev",
+            "email": "contact@labrodev.com",
+            "role": "Development Team"
+        }
+    ],
+    "support": {
+        "email": "contact@labrodev.com",
+        "issues": "https://github.com/labrodev/haversine/issues",
+        "source": "https://github.com/labrodev/haversine"
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpstan/phpstan": "^1.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Labrodev\\Haversine\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Labrodev\\Haversine\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "analyse": "phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
