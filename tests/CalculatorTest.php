@@ -16,7 +16,7 @@ class CalculatorTest extends TestCase
         float $expected,
         float $delta = 0.1
     ): void {
-        $distance = Calculator::fetchHaversineDistance($lat1, $lon1, $lat2, $lon2);
+        $distance = Calculator::calculateDistance($lat1, $lon1, $lat2, $lon2);
         $this->assertEqualsWithDelta($expected, $distance, $delta);
     }
 

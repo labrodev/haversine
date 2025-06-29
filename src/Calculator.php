@@ -14,7 +14,7 @@ namespace Labrodev\Haversine;
  *
  * @package Labrodev\Haversine
  */
-class Calculator
+final class Calculator
 {
     public const EARTH_RADIUS = 6371; // Radius in kilometers
 
@@ -27,7 +27,7 @@ class Calculator
      * @param float $lon2 Longitude of point B
      * @return float Distance in kilometers
      */
-    public static function fetchHaversineDistance(float $lat1, float $lon1, float $lat2, float $lon2): float
+    public static function calculateDistance(float $lat1, float $lon1, float $lat2, float $lon2): float
     {
         $r = self::EARTH_RADIUS;
 
