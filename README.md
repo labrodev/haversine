@@ -23,7 +23,7 @@ composer require labrodev/haversine
 use Labrodev\Haversine\Calculator;
 
 // Distance in kilometers between Paris and Frankfurt
-$distance = Calculator::calculateDistance(48.8566, 2.3522, 50.1109, 8.6821);
+$distance = Calculator::haversineDistance(48.8566, 2.3522, 50.1109, 8.6821);
 
 echo $distance; // e.g., 478.5 
 ```
